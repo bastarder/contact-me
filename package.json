@@ -1,0 +1,10 @@
+{
+  "name": "contact",
+  "description": "personal page",
+  "author": "bastarder <85257684@qq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "python server.py",
+    "deploy": "python deploy.py"
+  }
+}

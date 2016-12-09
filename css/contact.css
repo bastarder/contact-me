@@ -1,0 +1,275 @@
+body{
+  background: cadetblue;
+  font: 100%/1.5 "Roboto", Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.flash-text{
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35620,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.container{
+  width: 1000px;
+}
+
+.tips{
+  font-size: 12px;
+}
+
+.favicon{
+  width: 94px;
+  height: 94px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.head{
+  padding: 40px 0px;
+  color: white;
+  text-align: center;
+  background: cadetblue;
+}
+
+.head .large-text{
+  font-size: 32px;
+}
+
+.head .contact div{
+  margin-bottom: 12px;
+}
+
+.head .follow i{
+  font-size: 32px;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 40px;
+  padding: 2px;
+  width: 46px;
+  height: 46px;
+  margin: 2px 2px;
+  transition: all 0.6s;
+}
+
+/*.head .follow i:hover{
+  cursor: pointer;
+  color: cadetblue;
+  background: white;
+  transition: all 0.6s;
+}*/
+
+.head .warning i{
+  font-size: 70px;
+  margin: 4px 0px;
+}
+
+.about-me{
+  border-radius: 4px;
+  background: white;
+  padding-bottom: 30px;
+}
+
+.title{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.under-line{
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  border-top: 3px solid;
+  border-color: aqua;
+}
+
+.about-me .favicon{
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+
+.about-me p{
+  font-size: 18px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.about-me .code{
+  color: brown;
+  text-align: left;
+  font-size: 16px;
+  width: 400px;
+  background: white;
+}
+
+
+.skill{
+  margin: 40px 0px;
+  background: cadetblue;
+  padding: 0px 0px 30px 0px;
+  color: white;
+}
+
+.skill .dsc{
+  padding: 4px 18px;
+  font-size: 18px;
+}
+
+
+.download{
+  border-radius: 4px;
+  padding: 18px 10px;
+  color: white;
+}
+
+.download div{
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+}
+
+.product{
+  background: white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.p-block{
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.p-block .link{
+  width: 240px;
+  height: 180px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px gray;
+}
+
+.p-block .link .dsc{
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.6s;
+}
+
+.p-block .link:hover .dsc{
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+.p-block .link:hover .name{
+  margin-top: 58px;
+  font-size: 20px;
+  transition: all 0.6s;
+}
+
+.p-block .shadow{
+  display: inline-block;
+  width: 240px;
+  height: 180px;
+  background: rgba(0, 0, 0,0);
+  position: relative;
+  border-radius: 4px;
+  transition: background 0.8s;
+}
+
+.p-block .link:hover .shadow{
+  background: rgba(0, 0, 0, 0.8);
+  transition: background 0.8s;
+}
+
+.p-block .name{
+  margin-top: 72px;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  top: -190px;
+}
+
+.p-block .dsc{
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 4px;
+  transition: all 0.6s;
+  position: relative;
+  top: -190px;
+}
+
+.p-block .link{
+  text-align: center;
+  font-size: 12px;
+}
+
+.p-block .link a{
+  cursor: pointer;
+}
+
+.product .more{
+  text-align: right;
+  cursor: pointer;
+  color:brown;
+  padding-bottom: 4px;
+}
+
+
+.skill-icon{
+  font-size: 80px;
+  color: #b6a57d;
+}
+
+.skill-icon i{
+  margin: 0px 22px;
+  transition: all 1s;
+}
+
+.skill-icon i:hover{
+  font-size: 100px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.footer{
+  background: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.skill-dsc-left, .skill-dsc-right{
+  display: inline-block;
+  width: 90%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.skill-dsc-left{
+  font-size: 40px;
+}
+
+.skill-dsc-right{
+ font-size: 20px;
+}
+

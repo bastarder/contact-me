@@ -1,0 +1,35 @@
+.freecodecamp{
+  background-image:url(../img/freecodecamp.jpg);
+  background-size: 250%;
+  background-position: 0px 0px;
+}
+
+.pushBox{
+  background-image:url(../img/push-box.jpg);
+  background-size: 100%;
+  background-position: -1px -20px;
+}
+
+.Astar{
+  background-image:url(../img/astar.jpeg);
+  background-size: 100%;
+  background-position: 0px 0px;
+}
+
+.pnr{
+  background-image:url(../img/pnr.jpg);
+  background-size: 135%;
+  background-position: 0px 0px;
+}
+
+.bug{
+  background-image:url(../img/bug.jpeg);
+  background-size: 110%;
+  background-position: -10px -2px;
+}
+
+.dungeon{
+  background-image:url(../img/dungeon.jpg);
+  background-size: 130%;
+  background-position: -10px -2px;
+}

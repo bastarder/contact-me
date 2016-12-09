@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style>
+      .block{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 1px 0px 0px 1px;
+        background: black;
+        border-radius: 2px;
+      }
+      .person{
+        background: blue;
+      }
+      .box{
+        background: yellow;
+      }
+      .end{
+        background: gray;
+      }
+      .finish{
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+     <h1 id="aaa"></h1>
+     <button onclick="get()">Click</button>
+  </body>
+  <script>
+    
+  function get(){
+   var num = Math.floor(1+Math.random() * 17 * 2);
+   var floor = Math.floor(num/2);
+   var room = num % 2 === 1 ? "01" : "02";
+   document.getElementById('aaa').textContent = floor + room;
+  }
+
+
+
+    function Game(){
+      this.row = 10;
+      this.col = 10;
+      this.map = [];
+    }
+
+    Game.prototype.createMap = createMap;
+    Game.prototype.drawMap = drawMap;
+
+    var game = new Game();
+
+
+    function createMap(){
+      for(var i = 0; i < this.row; i++){
+        var row = [];
+        for(var j = 0; j < this.col; j++){
+          row.push(0);
+        }
+        this.map.push(row)
+      }
+    }
+
+    function drawMap(){
+      var map = "";
+      for(var i = 0; i < this.row; i++){
+        for(var j = 0; j < this.col; j++){
+          var type = this.map[i][j];
+          map += "<div class='block' x=" + i + " y=" + j + "></div>";
+        }
+        map +="<br>"
+      }
+      document.write(map);
+    }
+
+  </script>
+</html>
